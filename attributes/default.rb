@@ -30,7 +30,7 @@ default['datadog']['application_key'] = nil
 # The host of the Datadog intake server to send agent data to
 default['datadog']['url'] = 'https://app.datadoghq.com'
 
-# Add tags as override attributes in your role
+# Add tags as override attributes in your role, string or key/value
 # When using the Datadog Chef Handler, tags are set on the node with preset prefixes:
 # `env:node.chef_environment`, `role:node.node.run_list.role`, `tag:somecheftag`
 default['datadog']['tags'] = ''
